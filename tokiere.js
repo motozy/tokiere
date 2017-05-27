@@ -24,19 +24,29 @@ function main(){
         updateView();
     });
 
-    // OK
-    document.getElementById("full-screen").addEventListener("click", function(){
-        updateView();
-        showEditor(false);
-
-        var view = document.getElementById("view");
-        //fullScreen(view);
+    // フルスクリーン
+    var fsOn = document.getElementById("full-screen-on");
+    var fsOff = document.getElementById("full-screen-off");
+    fsOn.addEventListener("click", function(){
+        fullScreen(document.body);
+        fsOn.hidden = true;
+        fsOff.hidden = false;
+    });
+    fsOff.addEventListener("click", function(){
+        fullScreen(null);
+        fsOff.hidden = true;
+        fsOn.hidden = false;
     });
 
-    // フルスクリーン解除
+    // OK
+    document.getElementById("ok").addEventListener("click", function(){
+        updateView();
+        showEditor(false);
+    });
+
+    // 編集ウィンドウ表示
     document.getElementById("view").addEventListener("click", function(){
         showEditor(true);
-        //fullScreen(null);
     });
 }
 
@@ -69,11 +79,22 @@ function showEditor(show){
     editor.hidden = !show;
 }
 
+// フルスクリーンエレメント取得
+function getFullscreenElement(){
+    return (
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.mozFullScreenElement ||
+        document.msFullscreenElement ||
+        null
+    );
+}
+
 // フルスクリーンON/OFF
 function fullScreen(ele){
     if(ele){
         if(ele.webkitRequestFullScreen){
-             ele.webkitRequestFullScreen();
+            ele.webkitRequestFullScreen();
         }else if(ele.mozRequestFullScreen){
             ele.mozRequestFullScreen();
         }else if(ele.msFullscreenEnabled){

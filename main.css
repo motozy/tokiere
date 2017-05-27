@@ -35,11 +35,22 @@ body{
 	border-radius: 5px;
 }
 
-#full-screen{
+#full-screen-on, #full-screen-off, #ok{
 	position: absolute;
 	right: 0%;
 	top: 0%;
-	padding: 0px 6px;
+	height: 1.5em;
+	width: 3em;
+	text-align: center;
+}
+
+#full-screen-on, #full-screen-off{
+	right: 3.8em;
+}
+
+.full-screen{
+	vertical-align: middle;
+    height: 1em;
 }
 
 input{
@@ -81,7 +92,7 @@ input[type="button"]{
 	top: 1%;
 	left: 1%;
 	width: 20%;
-	min-width:120px;
+	min-width:100px;
 }
 
 .erenchan-window{
@@ -127,7 +138,7 @@ input[type="button"]{
 	border: solid 4px rgba(255,188,188,1);
 	font-size: 1.8em;
 	background-color: rgba(200,200,255, 0.8);
-	padding-left: 5%;
+	padding-left: 3%;
 	border-radius: 20px;
 	overflow:hidden;
 }
