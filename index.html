@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- twitter: @mmzy3 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+<link rel="stylesheet" href="./main.css" type="text/css" media="all">
+<title>ときえれメーカー</title>
+</head>
+<body>
+<div id="editor">
+    <div>
+        <span class="editor-item">
+            <label for="background-image">
+                背景画像選択
+                <input type="file" accept="image/*" id="background-image" style="display:none;">
+            </label>
+        </span>
+        <span class="editor-item" id="full-screen">
+            OK
+        </span>
+    </div>
+    <div class="editor-item">
+        表情
+        <input type="button" value="１" onclick="setFace('./img/face_00.png')">
+        <input type="button" value="２" onclick="setFace('./img/face_01.png')">
+        <input type="button" value="３" onclick="setFace('./img/face_02.png')">
+    </div>
+    <div class="editor-item">
+        服装
+        <input type="button" value="１" onclick="setBody('./img/erenchan_01.png')">
+        <input type="button" value="２" onclick="setBody('./img/erenchan_02.png')">
+        <input type="button" value="３" onclick="setBody('./img/erenchan_03.png')">
+    </div>
+    <div class="editor-item">
+        名前
+        <input type="text" id="name-edit" value="絵恋ちゃん">
+    </div>
+    <div class="editor-item">
+        台詞
+        <input type="text" id="words-edit" value="こんにちは！絵恋ちゃんだよ☆">
+    </div>
+</div>
+
+<div id="view">
+    <div class="logo">
+        <img src="http://eren.sorashi.com/images/logo.png" width="100%">
+    </div>
+    <div class="erenchan-window">
+        <img src="./img/erenchan_01.png" id="erenchan-body">
+    </div>
+    <div class="erenchan-window">
+        <img src="./img/face_00.png" id="erenchan-face">
+    </div>
+    <div class="bottom-window">
+        <div class="name-window">
+            <div id="name-text">
+            </div>
+        </div>
+        <div class="words-window">
+            <div id="words-text">
+            </div>
+            <img src="http://eren.sorashi.com/images/blink.png" id="blink">
+        </div>
+        <img src="http://eren.sorashi.com/images/erenchan4.png" id="minieren">
+    </div>
+</div>
+
+</body>
+<script src="./tokiere.js"></script>
+</html>
