@@ -23,12 +23,12 @@ body{
     padding: 1% 1%;
 	border: solid 4px rgba(255,240,0,1.0);
 	font-size: 150%;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.4);
 	border-radius: 10px;
 }
 
 .editor-item{
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.6);
 	vertical-align: middle;
 	border: solid 4px rgba(255,240,0,1.0);
 	margin: 5px;
@@ -55,7 +55,7 @@ body{
 
 input{
 	font-size: 0.9em;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,1);
 	vertical-align: middle;
 	margin: 3px 3px;
 	border-radius: 10px;
