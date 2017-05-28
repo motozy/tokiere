@@ -25,18 +25,15 @@ function main(){
     });
 
     // フルスクリーン
-    var fsOn = document.getElementById("full-screen-on");
-    var fsOff = document.getElementById("full-screen-off");
-    fsOn.addEventListener("click", function(){
-        fullScreen(document.body);
-        fsOn.hidden = true;
-        fsOff.hidden = false;
-    });
-    fsOff.addEventListener("click", function(){
-        fullScreen(null);
-        fsOff.hidden = true;
-        fsOn.hidden = false;
-    });
+    if(isRequestFullScreenAvelable(document.body)){
+        document.getElementById("full-screen-on").addEventListener("click", function(){
+            updateView();
+            showEditor(false);
+            fullScreen(document.body);
+        });
+    }else{
+        document.getElementById("full-screen-on").hidden = true;
+    }
 
     // OK
     document.getElementById("ok").addEventListener("click", function(){
@@ -47,6 +44,7 @@ function main(){
     // 編集ウィンドウ表示
     document.getElementById("view").addEventListener("click", function(){
         showEditor(true);
+        fullScreen(null);
     });
 }
 
@@ -87,6 +85,16 @@ function getFullscreenElement(){
         document.mozFullScreenElement ||
         document.msFullscreenElement ||
         null
+    );
+}
+
+// フルスクリーン可否確認
+function isRequestFullScreenAvelable(ele){
+    return (
+        ele.requestFullscreen ||
+        ele.mozRequestFullScreen ||
+        ele.webkitRequestFullScreen ||
+        ele.msFullscreenEnabled
     );
 }
 

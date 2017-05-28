@@ -11,34 +11,32 @@
 </head>
 <body>
 <div id="editor">
-    <div>
-        <span class="editor-item">
+    <div class="touch-area" id="full-screen-on">
+        <img src="./img/fullscreen_on.png" class="full-screen">
+    </div>
+    <div class="touch-area" id="ok">
+        OK
+    </div>
+    <div class="editor-item">
+        背景
+        <span class="touch-area">
             <label for="background-image">
-                背景画像選択
+                画像選択
                 <input type="file" accept="image/*" id="background-image" style="display:none;">
             </label>
-        </span>
-        <span class="editor-item" id="full-screen-on">
-            <img src="./img/fullscreen_on.png" class="full-screen">
-        </span>
-        <span class="editor-item" id="full-screen-off" hidden="true">
-            <img src="./img/fullscreen_off.png" class="full-screen">
-        </span>
-        <span class="editor-item" id="ok">
-            OK
         </span>
     </div>
     <div class="editor-item">
         表情
-        <input type="button" value="１" onclick="setFace('./img/face_00.png')">
-        <input type="button" value="２" onclick="setFace('./img/face_01.png')">
-        <input type="button" value="３" onclick="setFace('./img/face_02.png')">
+        <input type="button" value="1" onclick="setFace('./img/face_00.png')">
+        <input type="button" value="2" onclick="setFace('./img/face_01.png')">
+        <input type="button" value="3" onclick="setFace('./img/face_02.png')">
     </div>
     <div class="editor-item">
         服装
-        <input type="button" value="１" onclick="setBody('./img/erenchan_01.png')">
-        <input type="button" value="２" onclick="setBody('./img/erenchan_02.png')">
-        <input type="button" value="３" onclick="setBody('./img/erenchan_03.png')">
+        <input type="button" value="1" onclick="setBody('./img/erenchan_01.png')">
+        <input type="button" value="2" onclick="setBody('./img/erenchan_02.png')">
+        <input type="button" value="3" onclick="setBody('./img/erenchan_03.png')">
     </div>
     <div class="editor-item">
         名前

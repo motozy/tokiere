@@ -20,7 +20,7 @@ body{
 	left: 1%;
 	bottom: 1%;
 	right: 1%;
-    padding: 1% 1%;
+    padding: 5px 5px;
 	border: solid 4px rgba(255,240,0,1.0);
 	font-size: 150%;
 	background-color: rgba(255,255,255,0.4);
@@ -28,24 +28,35 @@ body{
 }
 
 .editor-item{
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.8);
 	vertical-align: middle;
-	border: solid 4px rgba(255,240,0,1.0);
 	margin: 5px;
+    padding: 5px 5px;
 	border-radius: 5px;
+	line-height: 1.5em;
 }
 
-#full-screen-on, #full-screen-off, #ok{
+.touch-area, input[type="button"], input[type="text"]{
+	background-color: rgba(255,248,128,1.0);
+	vertical-align: middle;
+	border: solid 4px rgba(255,240,0,1.0);
+	margin: 0px;
+    padding: 0px 5px;
+	border-radius: 5px;
+	line-height: 1.5em;
+}
+
+#full-screen-on, #ok{
 	position: absolute;
-	right: 0%;
-	top: 0%;
+	right: 2px;
+	top: 2px;
 	height: 1.5em;
-	width: 3em;
+	width: 48px;
 	text-align: center;
 }
 
-#full-screen-on, #full-screen-off{
-	right: 3.8em;
+#full-screen-on{
+	right: 70px;
 }
 
 .full-screen{
@@ -55,18 +66,20 @@ body{
 
 input{
 	font-size: 0.9em;
-	background-color: rgba(255,255,255,1);
+/*	background-color: rgba(255,255,255,1);*/
 	vertical-align: middle;
 	margin: 3px 3px;
 	border-radius: 10px;
 }
 
 input[type="text"]{
-	width: 85%;
+	width: 80%;
+	background-color: rgba(255,254,240,1.0);
 }
 
 input[type="button"]{
-	width: 10%;
+	width: 15%;
+	text-align: center;
 }
 
 /*-----------------------------------------
@@ -77,7 +90,7 @@ input[type="button"]{
 	z-index: 0;
 	position: absolute;
 	top: 0;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	background-image: url("http://eren.sorashi.com/wp-content/themes/eren/images/bg.jpg");
@@ -101,6 +114,7 @@ input[type="button"]{
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	overflow:hidden;
 }
 
 .erenchan-window img{
