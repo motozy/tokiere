@@ -77,17 +77,6 @@ function showEditor(show){
     editor.hidden = !show;
 }
 
-// フルスクリーンエレメント取得
-function getFullscreenElement(){
-    return (
-        document.fullscreenElement ||
-        document.webkitFullscreenElement ||
-        document.mozFullScreenElement ||
-        document.msFullscreenElement ||
-        null
-    );
-}
-
 // フルスクリーン可否確認
 function isRequestFullScreenAvelable(ele){
     return (
