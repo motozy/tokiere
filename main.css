@@ -48,6 +48,7 @@ body{
 .links a{
 	text-decoration: none;
 	margin: 3px;
+	color: #3a3a3a;
 }
 
 .touch-area, input[type="button"], input[type="text"]{
