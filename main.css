@@ -17,12 +17,12 @@ body{
 #editor{
 	z-index: 1;
 	position: absolute;
-	left: 1%;
-	bottom: 1%;
-	right: 1%;
-    padding: 5px 5px;
+	left: 0.5%;
+	bottom: 0.5%;
+	right: 0.5%;
+    padding: 0px 0px;
 	border: solid 4px rgba(255,240,0,1.0);
-	font-size: 150%;
+	font-size: 130%;
 	background-color: rgba(255,255,255,0.4);
 	border-radius: 10px;
 }
@@ -30,7 +30,7 @@ body{
 .editor-item, .links{
 	background-color: rgba(255,255,255,0.8);
 	vertical-align: middle;
-	margin: 5px;
+	margin: 4px;
 	border-radius: 5px;
 }
 
@@ -41,7 +41,7 @@ body{
 
 .links{
     padding: 0px 5px;
-	font-size: 0.5em;
+	font-size: 0.4em;
 	text-align: center;
 }
 
