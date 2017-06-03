@@ -6,45 +6,47 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
-<link rel="stylesheet" href="./main.css?rev=1.02" type="text/css" media="all">
+<link rel="stylesheet" href="./main.css?rev=1.03" type="text/css" media="all">
 <title>ときえれメーカー</title>
 </head>
 <body>
 <div id="editor">
-    <div class="touch-area" id="full-screen-on">
-        <img src="./img/fullscreen_on.png" class="full-screen">
-    </div>
-    <div class="touch-area" id="ok">
-        OK
-    </div>
-    <div class="editor-item">
-        背景
-        <span class="touch-area">
-            <label for="background-image">
-                画像選択
-                <input type="file" accept="image/*" id="background-image" style="display:none;">
-            </label>
-        </span>
-    </div>
-    <div class="editor-item">
-        表情
-        <input type="button" value="1" onclick="setFace('./img/face_00.png')">
-        <input type="button" value="2" onclick="setFace('./img/face_01.png')">
-        <input type="button" value="3" onclick="setFace('./img/face_02.png')">
-    </div>
-    <div class="editor-item">
-        服装
-        <input type="button" value="1" onclick="setBody('./img/erenchan_01.png')">
-        <input type="button" value="2" onclick="setBody('./img/erenchan_02.png')">
-        <input type="button" value="3" onclick="setBody('./img/erenchan_03.png')">
-    </div>
-    <div class="editor-item">
-        名前
-        <input type="text" id="name-edit" value="絵恋ちゃん">
-    </div>
-    <div class="editor-item">
-        台詞
-        <input type="text" id="words-edit" value="こんにちは！絵恋ちゃんだよ☆">
+    <div class="editor-window">
+        <div class="touch-area" id="full-screen-on">
+            <img src="./img/fullscreen_on.png" class="full-screen">
+        </div>
+        <div class="touch-area" id="ok">
+            OK
+        </div>
+        <div class="editor-item">
+            背景
+            <span class="touch-area">
+                <label for="background-image">
+                    画像選択
+                    <input type="file" accept="image/*" id="background-image" style="display:none;">
+                </label>
+            </span>
+        </div>
+        <div class="editor-item">
+            表情
+            <input type="button" value="1" onclick="setFace('./img/face_00.png')">
+            <input type="button" value="2" onclick="setFace('./img/face_01.png')">
+            <input type="button" value="3" onclick="setFace('./img/face_02.png')">
+        </div>
+        <div class="editor-item">
+            服装
+            <input type="button" value="1" onclick="setBody('./img/erenchan_01.png')">
+            <input type="button" value="2" onclick="setBody('./img/erenchan_02.png')">
+            <input type="button" value="3" onclick="setBody('./img/erenchan_03.png')">
+        </div>
+        <div class="editor-item">
+            名前
+            <input type="text" id="name-edit" value="絵恋ちゃん">
+        </div>
+        <div class="editor-item">
+            台詞
+            <input type="text" id="words-edit" value="こんにちは！絵恋ちゃんだよ☆">
+        </div>
     </div>
     <div class="links">
         <a href="http://eren.sorashi.com">👉絵恋ちゃんホームページ</a>

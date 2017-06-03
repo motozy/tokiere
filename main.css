@@ -17,6 +17,14 @@ body{
 #editor{
 	z-index: 1;
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.editor-window{
+	position: absolute;
 	left: 0.5%;
 	bottom: 0.5%;
 	right: 0.5%;
@@ -27,7 +35,7 @@ body{
 	border-radius: 10px;
 }
 
-.editor-item, .links{
+.editor-item{
 	background-color: rgba(255,255,255,0.8);
 	vertical-align: middle;
 	margin: 4px;
@@ -42,7 +50,7 @@ body{
 .links{
     padding: 0px 5px;
 	font-size: 0.4em;
-	text-align: center;
+	text-align: right;
 }
 
 .links a{
